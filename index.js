@@ -20,7 +20,7 @@ function parseColor(str) {
       col.r = parseInt(str[0] + str[1], 16);
       col.g = parseInt(str[2] + str[3], 16);
       col.b = parseInt(str[4] + str[5], 16);
-      col.a = parseInt(str[6] + str[7], 16);
+      col.a = parseInt(str[6] + str[7], 16) / 255;
     }
   } else if (str.search('rgb') === 0) {
     str = str.replace(/rgb|a\(|\)|\s+/g, '');
