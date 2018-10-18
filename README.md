@@ -6,6 +6,8 @@
 $ npm install --save mix-color
 ```
 
+## Use
+
 ```js
 import mix from 'mix-color'
 
