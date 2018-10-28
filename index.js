@@ -45,12 +45,16 @@ function mix(from, to, point) {
     r = fromCol.r;
     g = fromCol.g;
     b = fromCol.b;
+    a = fromCol.a * (1 - point) === 0 ? toCol.a : fromCol.a * (1 - point);
   } else {
     r = interpolate(fromCol.r, toCol.r, point);
     g = interpolate(fromCol.g, toCol.g, point);
     b = interpolate(fromCol.b, toCol.b, point);
+    a =
+      fromCol.a * toCol.a * (1 - point) === 0
+        ? toCol.a
+        : fromCol.a * toCol.a * (1 - point);
   }
-  a = fromCol.a * toCol.a * (1 - point) === 0 ? toCol.a: fromCol.a * toCol.a * (1 - point);
   return 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
 }
 
