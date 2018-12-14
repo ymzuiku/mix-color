@@ -39,9 +39,15 @@ exports[`alphaColor to alphaColor: mix('rgba(255,128,0,0)', 'rgba(0,128,0,1)', 0
 
 exports[`alphaColor to alphaColor: mix('rgba(255,128,0,0.5)', 'rgba(0,128,0,0.5)', 1) 1`] = `"rgba(0, 128, 0, 0.25)"`;
 
+exports[`alphaColor to alphaColor: mix('rgba(255,128,0,1)', 'rgba(0,128,0,-0.3)', 0.2) 1`] = `"rgba(255, 128, 0, 0)"`;
+
 exports[`alphaColor to alphaColor: mix('rgba(255,128,0,1)', 'rgba(0,128,0,0)', 0.2) 1`] = `"rgba(204, 128, 0, 0.8)"`;
 
 exports[`alphaColor to alphaColor: mix('rgba(255,128,0,1)', 'rgba(0,128,0,0.3)', 0.2) 1`] = `"rgba(204, 128, 0, 0.24)"`;
+
+exports[`alphaColor to alphaColor: mix('rgba(255,128,0,1)', 'rgba(0,128,0,0.3)', 0.2) 2`] = `"rgba(0, 128, 0, 1)"`;
+
+exports[`alphaColor to alphaColor: mix('rgba(255,128,0,1)', 'rgba(0,128,0,0.3)', 0.2) 3`] = `"rgba(255, 128, 0, 0.3)"`;
 
 exports[`alphaColor to alphaColor: mix('rgba(255,128,0,1)', 'rgba(255,128,0,0.5)', 0.5) 1`] = `"rgba(255, 128, 0, 0.25)"`;
 
@@ -49,17 +55,17 @@ exports[`alphaColor to alphaColor: mix('rgba(255,128,0,1)', 'rgba(255,128,0,3)',
 
 exports[`color to color: mix('#336699', '#f80') 1`] = `"rgba(255, 136, 0, 1)"`;
 
-exports[`color to color: mix('#336699', '#f80', 0.2) 1`] = `"rgba(91, 108, 122, 0.8)"`;
+exports[`color to color: mix('#336699', '#f80', 0.2) 1`] = `"rgba(91, 108, 122, 1)"`;
 
-exports[`color to color: mix('#336699', '#f80', 0.5) 1`] = `"rgba(153, 119, 76, 0.5)"`;
+exports[`color to color: mix('#336699', '#f80', 0.5) 1`] = `"rgba(153, 119, 76, 1)"`;
 
 exports[`color to color: mix('#336699', '#f80', 1) 1`] = `"rgba(255, 136, 0, 1)"`;
 
 exports[`color to color: mix('#336699', '#ff8800') 1`] = `"rgba(255, 136, 0, 1)"`;
 
-exports[`color to color: mix('#336699', '#ff8800', 0.2) 1`] = `"rgba(91, 108, 122, 0.8)"`;
+exports[`color to color: mix('#336699', '#ff8800', 0.2) 1`] = `"rgba(91, 108, 122, 1)"`;
 
-exports[`color to color: mix('#336699', '#ff8800', 0.5) 1`] = `"rgba(153, 119, 76, 0.5)"`;
+exports[`color to color: mix('#336699', '#ff8800', 0.5) 1`] = `"rgba(153, 119, 76, 1)"`;
 
 exports[`color to color: mix('#336699', '#ff8800', 1) 1`] = `"rgba(255, 136, 0, 1)"`;
 
@@ -67,13 +73,14 @@ exports[`color to color: mix('#336699', 'rgb(255,128,0)', 1) 1`] = `"rgba(255, 1
 
 exports[`color to color: mix('#336699', 'rgba(255,128,0,1)') 1`] = `"rgba(255, 128, 0, 1)"`;
 
-exports[`color to color: mix('#336699', 'rgba(255,128,0,1)', 0.2) 1`] = `"rgba(91, 107, 122, 0.8)"`;
+exports[`color to color: mix('#336699', 'rgba(255,128,0,1)', 0.2) 1`] = `"rgba(91, 107, 122, 1)"`;
 
-exports[`color to color: mix('#336699', 'rgba(255,128,0,1)', 0.5) 1`] = `"rgba(153, 115, 76, 0.5)"`;
+exports[`color to color: mix('#336699', 'rgba(255,128,0,1)', 0.5) 1`] = `"rgba(153, 115, 76, 1)"`;
 
 exports[`color to color: mix('#336699', 'rgba(255,128,0,1)', 1) 1`] = `"rgba(255, 128, 0, 1)"`;
 
 exports[`color to color: mix('rgb(0,128,0)', 'rgb(255,128,0)', 1) 1`] = `"rgba(255, 128, 0, 1)"`;
+
 
 
 ```
