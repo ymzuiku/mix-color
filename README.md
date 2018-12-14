@@ -9,11 +9,17 @@ $ npm install --save mix-color
 ## Use
 
 ```js
-import mix from 'mix-color'
+import mix from 'mix-color';
 
-mix('#fff', '#000', 0.5) 
-mix('#ff0000', 'rgba(0,0,0,0.3)', 0.2) 
-mix('#ff0000', '#ffffff88', 0.1) 
+mix('#fff', '#000', 0.5);
+mix('#ff0000', 'rgba(0,0,0,0.3)', 0.2);
+mix('#ff0000', '#ffffff88', 0.1);
+```
+
+## build and publish npm
+
+```sh
+node scripts/build.lib.js && cd dist && npm publish --access public
 ```
 
 ## Test List
