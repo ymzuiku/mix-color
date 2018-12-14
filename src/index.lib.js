@@ -48,7 +48,9 @@ function fixColor(a, b, t) {
 function fixAlpha(a, b, t) {
   t = 1 - t < 0 ? 0 : 1 - t;
   let n;
-  if (a === 0) {
+  if (a * b === 1) {
+    n = 1;
+  } else if (a === 0) {
     n = b * t;
   } else if (b === 0) {
     n = a * t;
