@@ -1,6 +1,6 @@
 {
   "name": "mix-color",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "umd/index.js",
   "types": "umd/index.d.ts",
   "private": false,
