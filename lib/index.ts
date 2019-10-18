@@ -1,4 +1,4 @@
-function parseColor(str) {
+export function parseColor(str: string) {
   const col = {
     r: 0,
     g: 0,
@@ -38,16 +38,16 @@ function parseColor(str) {
   return col;
 }
 
-function fixColor(a, b, t) {
+function fixColor(a: any, b: any, t: any) {
   const fix = a + (b - a) * t;
   let n = a !== b ? fix : a;
   n = n > 255 ? 255 : n;
   return Math.floor(n);
 }
 
-function fixAlpha(a, b, t) {
+function fixAlpha(a: any, b: any, t: any) {
   t = 1 - t < 0 ? 0 : 1 - t;
-  let n;
+  let n: any;
   if (a * b === 1) {
     n = 1;
   } else if (a === 0) {
@@ -64,7 +64,7 @@ function fixAlpha(a, b, t) {
   return (n.toFixed(4) * 10000) / 10000;
 }
 
-function mix(from, to, point = 1) {
+function mixColor(from: any, to: any, point = 1) {
   const fromCol = parseColor(from);
   const toCol = parseColor(to);
   const r = fixColor(fromCol.r, toCol.r, point);
@@ -74,4 +74,4 @@ function mix(from, to, point = 1) {
   return `rgba(${r}, ${g}, ${b}, ${a})`;
 }
 
-export default mix;
+export default mixColor;
